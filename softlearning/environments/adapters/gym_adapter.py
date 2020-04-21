@@ -5,7 +5,8 @@ import gym
 from gym import spaces, wrappers
 
 from .softlearning_env import SoftlearningEnv
-from softlearning.environments.gym import register_environments
+# from softlearning.environments.gym import register_environments
+from simbl_baselines.environments import register_environments
 from softlearning.environments.gym.wrappers import NormalizeActionWrapper
 from collections import defaultdict
 
