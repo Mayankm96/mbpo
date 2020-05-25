@@ -4,7 +4,7 @@ params = {
     'domain': 'InvertedPendulum',
     'task': 'v3',
 
-    'log_dir': '~/ray_mbpo/',
+    'log_dir': '~/Projects/nnaisense/simbl-baselines/results/MBPO-Data',
     'exp_name': 'defaults',
 
     'kwargs': {
