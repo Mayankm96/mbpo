@@ -6,7 +6,7 @@ from gym import spaces, wrappers
 
 from .softlearning_env import SoftlearningEnv
 # from softlearning.environments.gym import register_environments
-from simbl_baselines.environments import register_environments
+from simbl_baselines.environments import register_classic_environments
 from softlearning.environments.gym.wrappers import NormalizeActionWrapper
 from collections import defaultdict
 
@@ -19,7 +19,7 @@ def parse_domain_task(gym_id):
     return domain, task
 
 
-CUSTOM_GYM_ENVIRONMENT_IDS = register_environments()
+CUSTOM_GYM_ENVIRONMENT_IDS = register_classic_environments()
 CUSTOM_GYM_ENVIRONMENTS = defaultdict(list)
 
 for gym_id in CUSTOM_GYM_ENVIRONMENT_IDS:
