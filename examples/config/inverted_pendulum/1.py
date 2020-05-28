@@ -12,10 +12,10 @@ params = {
         'epoch_length': 250,
         'train_every_n_steps': 1,
         'n_train_repeat': 10,
-        'eval_render_mode': 'human',
+        'eval_render_mode': 'rgb_array',
         'eval_n_episodes': 4,
         'eval_deterministic': True,
-        'video_save_frequency': 10,
+        'video_save_frequency': 250,
 
         'discount': 0.99,
         'tau': 5e-3,

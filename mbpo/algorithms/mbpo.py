@@ -232,7 +232,7 @@ class MBPO(RLAlgorithm):
                     
 
                     gt.stamp('epoch_rollout_model')
-                    # self._visualize_model(self._evaluation_environment, self._total_timestep)
+                    self._visualize_model(self._evaluation_environment, self._total_timestep)
                     self._training_progress.resume()
 
                 self._do_sampling(timestep=self._total_timestep)
