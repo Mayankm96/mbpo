@@ -29,8 +29,12 @@ class StaticFns:
         assert len(obs.shape) == len(next_obs.shape) == len(act.shape) == 2
 
         state_high = np.array([1, 1])
-        state_term = np.any(next_obs > state_high) or np.any(next_obs < -state_high)
+        state_term_high = np.any(next_obs > state_high, axis=1)
+        state_term_low = np.any(next_obs < -state_high, axis=1)
 
-        done = state_term
+        done = np.any(np.stack([state_term_high, state_term_low], axis=1), axis=1)
+        print(done.shape)
+        # make it batched
+        done = done[:, None]
 
         return done

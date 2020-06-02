@@ -8,14 +8,14 @@ params = {
     'exp_name': 'defaults',
 
     'kwargs': {
-        'n_epochs': 80, ## 20k steps
+        'n_epochs': 240, ## 80: 20k steps
         'epoch_length': 250,
         'train_every_n_steps': 1,
         'n_train_repeat': 10,
-        'eval_render_mode': 'rgb_array',
-        'eval_n_episodes': 5,
+        'eval_n_episodes': 1,
         'eval_deterministic': True,
-        'video_save_frequency': 10,
+        # 'eval_render_mode': 'rgb_array',
+        # 'video_save_frequency': 10,
 
         'discount': 0.99,
         'tau': 5e-3,
