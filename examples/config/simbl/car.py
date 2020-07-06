@@ -1,10 +1,10 @@
 params = {
     'type': 'MBPO',
     'universe': 'gym',
-    'domain': 'CarKinematics',
-    'task': 'v1',
+    'domain': 'SimblCarKinematics',
+    'task': 'v2',
 
-    'log_dir': '~/Projects/nnaisense/simbl-baselines/results/Car-MBPO-Data',
+    'log_dir': '~/mbpo_results/',
     'exp_name': 'defaults',
 
     'kwargs': {

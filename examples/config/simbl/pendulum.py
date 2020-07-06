@@ -1,10 +1,10 @@
 params = {
     'type': 'MBPO',
     'universe': 'gym',
-    'domain': 'InvertedPendulum',
-    'task': 'v3',
+    'domain': 'SimblInvertedPendulum',
+    'task': 'v2',
 
-    'log_dir': '~/Projects/nnaisense/simbl-baselines/results/MBPO-Data',
+    'log_dir': '~/mbpo_results/',
     'exp_name': 'defaults',
 
     'kwargs': {
