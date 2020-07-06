@@ -3,15 +3,17 @@ import numpy as np
 import pdb
 
 """
-For SiMBL Car Kinematics
+For SiMBL Inverted Pendulum
 """
+
+
 class StaticFns:
 
     @staticmethod
     def termination_fn(obs, act, next_obs):
-        done = np.zeros((obs.shape[0], 1), dtype=bool)
-        return done
-        # state_high = np.array([1, 1, 1])
+        # assert len(obs.shape) == len(next_obs.shape) == len(act.shape) == 2
+        #
+        # state_high = np.array([1, 1])
         # state_term_high = np.any(next_obs > state_high, axis=1)
         # state_term_low = np.any(next_obs < -state_high, axis=1)
         #
@@ -21,3 +23,7 @@ class StaticFns:
         # done = done[:, None]
         #
         # return done
+
+        # Always false (true for environment version v2)
+        done = np.zeros((obs.shape[0], 1), dtype=bool)
+        return done
