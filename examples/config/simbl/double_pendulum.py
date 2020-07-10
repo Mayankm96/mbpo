@@ -1,7 +1,7 @@
 params = {
     'type': 'MBPO',
     'universe': 'gym',
-    'domain': 'SimblInvertedDoublePendulum',
+    'domain': 'SimblDoublePendulum',
     'task': 'v2',
 
     'log_dir': '~/mbpo_results/',
@@ -34,4 +34,3 @@ params = {
         'n_initial_exploration_steps': 500,
     }
 }
-
